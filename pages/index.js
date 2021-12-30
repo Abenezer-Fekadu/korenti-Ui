@@ -1,28 +1,32 @@
+import 'antd/dist/antd.css';
 import Head from 'next/head'
-import AboutTabs from '../components/aboutUsTab'
-import Goals from '../components/goals'
-import ContactUs from '../components/contactUs'
-import Hero from '../components/heroAbout'
-import Footer from '../components/common/Footer'
-import Navbar from '../components/common/Navbar'
+
+// import App from '../components/new/modal'
+import Drop from '../components/new/dropdown'
+import SignUp from '../components/new/signup'
+import Login from '../components/new/loginForm'
+import NewFundraiser from '../components/new/new_fundraiser'
+
+
 export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>About - Lommi</title>
+        <title>New - Lommi</title>
         <meta name="description" content="Lommi" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
 
       <main>
-        <Hero />
-        <AboutTabs />
-        <Goals />
-        <ContactUs />
+          <Drop />
+
+          {/* <Login />  */}
+          {/* <SignUp /> */}
+
+          <NewFundraiser />
+          {/* <DashBoard /> */}
       </main>
 
-        <Footer />
     </div>
   )
 }
