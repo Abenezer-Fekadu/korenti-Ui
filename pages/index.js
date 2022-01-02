@@ -1,12 +1,12 @@
 import 'antd/dist/antd.css';
 import Head from 'next/head'
 
-// import App from '../components/new/modal'
+import Display from '../components/new/modal'
 import Drop from '../components/new/dropdown'
 import SignUp from '../components/new/signup'
 import Login from '../components/new/loginForm'
 import NewFundraiser from '../components/new/new_fundraiser'
-
+import DashBoard from '../components/new/dashboard'
 
 export default function Home() {
   return (
@@ -18,12 +18,14 @@ export default function Home() {
       </Head>
 
       <main>
+
+          {/* <Display /> */}
           <Drop />
 
           {/* <Login />  */}
           {/* <SignUp /> */}
 
-          <NewFundraiser />
+          {/* <NewFundraiser /> */}
           {/* <DashBoard /> */}
       </main>
 
