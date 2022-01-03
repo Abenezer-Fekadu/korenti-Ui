@@ -1,32 +1,23 @@
 import 'antd/dist/antd.css';
 import Head from 'next/head'
 
-import Display from '../components/new/modal'
-import Drop from '../components/new/dropdown'
-import SignUp from '../components/new/signup'
-import Login from '../components/new/loginForm'
-import NewFundraiser from '../components/new/new_fundraiser'
-import DashBoard from '../components/new/dashboard'
-
+import Profile from '../components/third/profile'
+import PostUpdate from '../components/third/postUpdate'
+import Donate from '../components/third/donate'
 export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>New - Lommi</title>
+        <title>Third - Lommi</title>
         <meta name="description" content="Lommi" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <Profile />
+        <PostUpdate />
+        <Donate />
 
-          {/* <Display /> */}
-          <Drop />
-
-          {/* <Login />  */}
-          {/* <SignUp /> */}
-
-          {/* <NewFundraiser /> */}
-          {/* <DashBoard /> */}
       </main>
 
     </div>
