@@ -1,7 +1,7 @@
 import 'antd/dist/antd.css';
 import Head from 'next/head'
 
-import Profile from '../components/third/profile'
+import Navbar from '../components/common/Navbar'
 import PostUpdate from '../components/third/postUpdate'
 import Donate from '../components/third/donate'
 export default function Home() {
@@ -14,9 +14,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Profile />
+        <Navbar />
         <PostUpdate />
-        <Donate />
+        {/* <Donate /> */}
 
       </main>
 
